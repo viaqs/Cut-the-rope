@@ -9,8 +9,7 @@ public class Monster : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Candy"))
         {
-            Destroy(other.gameObject);
-            //TODO: show score
+            UiManager.instance.NextLevelScreen();
         }
     }
 }
